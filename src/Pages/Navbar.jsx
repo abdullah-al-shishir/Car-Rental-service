@@ -22,19 +22,34 @@ const Navbar = () => {
         </button>
       </div>
       <div className="space-x-5 font-semibold text-xl ">
-        <NavLink to="/" className="focus:underline focus:font-bold">
+        <NavLink
+          to="/"
+          className="focus:underline focus:font-bold hover:text-amber-600"
+        >
           Home
         </NavLink>
-        <NavLink to="/cars" className="focus:underline focus:font-bold">
+        <NavLink
+          to="/cars"
+          className="focus:underline focus:font-bold hover:text-amber-600"
+        >
           Cars
         </NavLink>
-        <NavLink to="/booking" className="focus:underline focus:font-bold">
+        <NavLink
+          to="/booking"
+          className="focus:underline focus:font-bold hover:text-amber-600"
+        >
           Booking
         </NavLink>
-        <NavLink to="/Contact" className="focus:underline focus:font-bold">
+        <NavLink
+          to="/Contact"
+          className="focus:underline focus:font-bold hover:text-amber-600"
+        >
           Contact
         </NavLink>
-        <NavLink to="/about" className="focus:underline focus:font-bold">
+        <NavLink
+          to="/about"
+          className="focus:underline focus:font-bold hover:text-amber-600"
+        >
           About US
         </NavLink>
       </div>
