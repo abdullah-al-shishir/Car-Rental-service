@@ -21,6 +21,7 @@ const Navbar = () => {
           <ImBrightnessContrast className="icon font-bold bg-white ml-3 p-2  text-4xl border-1 border-gray-200 rounded-lg " />
         </button>
       </div>
+      {/* Page Links */}
       <div className="space-x-5 font-semibold text-xl ">
         <NavLink
           to="/"
