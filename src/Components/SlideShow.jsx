@@ -13,7 +13,7 @@ const images = [
   "url(/assets/car10.jpg)",
 ];
 
-const SlideShow = ({ interval = 3000 }) => {
+const SlideShow = ({ children, interval = 3000 }) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -37,7 +37,8 @@ const SlideShow = ({ interval = 3000 }) => {
       style={bg_style}
       class="rounded-2xl flex justify-center items-center text-white"
     >
-      <Search />
+      {/* Passing Search component as prop */}
+      {children}
     </div>
   );
 };

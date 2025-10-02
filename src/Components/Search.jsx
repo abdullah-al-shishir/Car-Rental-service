@@ -46,10 +46,10 @@ const Search = () => {
       <button
         type="submit"
         class="
-        bg-orange-600 hover:bg-orange-700 
-        text-white font-bold  hover:cursor-pointer
+        bg-orange-600 hover:bg-blue-950
+        text-black font-bold  hover:cursor-pointer hover:text-white
         py-1.5 px-5 rounded-lg text-xl
-        shadow-md transition duration-150 ease-in-out
+        shadow-md transition duration-250 ease-in-out
       "
       >
         Search
