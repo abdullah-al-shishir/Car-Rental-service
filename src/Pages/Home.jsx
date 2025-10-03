@@ -5,6 +5,7 @@ import Search from "../Components/Search";
 import HomeCars from "../Components/HomeCars";
 import Choose from "../Components/Choose";
 import HomeFooter from "../Components/HomeFooter";
+import Search_2 from "../Components/Search_2";
 
 const Home = () => {
   return (
@@ -16,6 +17,9 @@ const Home = () => {
           <Search />
         </SlideShow>
       </div>
+
+      <Search_2 />
+
       <div className="flex justify-center mt-16">
         <button
           type="submit"

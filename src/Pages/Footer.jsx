@@ -18,11 +18,11 @@ const Footer = () => {
           Car Rental
         </span>
       </div>
-      <div className="mt-5">
+      <div className="mt-5 ">
         <h1 className="text-center text-orange-500 text-xl font-bold underline">
           Important Links
         </h1>
-        <div className="flex justify-center space-x-35 font-semibold text-xl mt-4">
+        <div className="grid justify-center  md:flex md:space-x-35 font-semibold text-xl mt-4">
           <NavLink
             to="/"
             className="text-orange-500 text-xl font-bold  hover:text-blue-600"
@@ -49,7 +49,7 @@ const Footer = () => {
           </NavLink>
         </div>
       </div>
-      <div className="mt-5 flex justify-center space-x-26 ">
+      <div className="mt-5 flex justify-center space-x-10 md:space-x-26 ">
         <FaFacebook className="text-amber-700 text-2xl" />
         <FaInstagram className="text-amber-700 text-2xl" />
         <FaTwitter className="text-amber-700 text-2xl" />

@@ -10,8 +10,6 @@ const HomeFooter = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     opacity: "0.75",
-    // display: "flex",
-    // justifyContent: "center",
   };
 
   return (
