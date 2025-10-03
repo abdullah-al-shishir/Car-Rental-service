@@ -10,7 +10,7 @@ const HomeCars = () => {
         <span className="text-amber-600 pl-2 "> Driving Machine</span>
       </h1>
       {/* Parent Image div */}
-      <div className=" grid grid-cols-2 md:grid-cols-3  gap-4 grid-flow-row-dense my-10 mx-8">
+      <div className=" grid grid-cols-2 md:grid-cols-3  gap-4 grid-flow-row-dense my-10 mx-1">
         {/* All images are here */}
 
         <div className=" overflow-hidden rounded-2xl">

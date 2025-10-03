@@ -11,12 +11,23 @@ const Menu = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const mobileLinkClasses =
-    "font-semibold text-xl p-2 w-full text-center hover:bg-gray-100";
+
+  // FIX: desktopLinkClasses uses a function with isActive for styling
+  const desktopLinkClasses = ({ isActive }) =>
+    `font-semibold text-xl hover:text-amber-600 ${
+      isActive ? "underline font-bold text-amber-600" : ""
+    }`;
+
+  // FIX: mobileLinkClasses uses a function with isActive for styling
+  const mobileLinkClasses = ({ isActive }) =>
+    `font-semibold text-xl text-orange-400 pl-3 py-2 w-full hover:text-blue-500 hover:-translate-y-0.5 ${
+      isActive ? "underline font-bold text-blue-500" : ""
+    }`;
+
   return (
-    <nav className="flex justify-between items-center  bg-gray-50">
+    <nav className="flex justify-between items-center bg-gray-50">
       {/* Logo and Branding Section */}
-      <div className="flex  items-center">
+      <div className="flex items-center">
         <a href="http://localhost:5173/">
           <img
             src="./assets/logo.jpg"
@@ -28,40 +39,25 @@ const Menu = () => {
           <span className="font-bold text-2xl text-amber-500">Rental</span>
         </a>
         <button type="submit">
-          <ImBrightnessContrast className="icon font-bold bg-white ml-3 p-2  text-4xl border-1 border-gray-200 rounded-lg " />
+          <ImBrightnessContrast className="icon font-bold bg-white ml-3 p-2 text-4xl border-1 border-gray-200 rounded-lg" />
         </button>
       </div>
 
-      {/* Page Links - Desktop/Tablet View */}
-      <div className="hidden md:block space-x-5 font-semibold text-xl ">
-        <NavLink
-          to="/"
-          className="focus:underline focus:font-bold hover:text-amber-600"
-        >
+      {/* Page Links - Desktop/Tablet View - FIX APPLIED HERE */}
+      <div className="hidden md:block space-x-5 font-semibold text-xl">
+        <NavLink to="/" className={desktopLinkClasses}>
           Home
         </NavLink>
-        <NavLink
-          to="/cars"
-          className="focus:underline focus:font-bold hover:text-amber-600"
-        >
+        <NavLink to="/cars" className={desktopLinkClasses}>
           Cars
         </NavLink>
-        <NavLink
-          to="/booking"
-          className="focus:underline focus:font-bold hover:text-amber-600"
-        >
+        <NavLink to="/booking" className={desktopLinkClasses}>
           Booking
         </NavLink>
-        <NavLink
-          to="/Contact"
-          className="focus:underline focus:font-bold hover:text-amber-600"
-        >
+        <NavLink to="/Contact" className={desktopLinkClasses}>
           Contact
         </NavLink>
-        <NavLink
-          to="/about"
-          className="focus:underline focus:font-bold hover:text-amber-600"
-        >
+        <NavLink to="/about" className={desktopLinkClasses}>
           About Us
         </NavLink>
       </div>
@@ -79,7 +75,7 @@ const Menu = () => {
         <button
           type="submit"
           onClick={toggleMenu}
-          className="md:hidden text-2xl z-100  transition-transform duration-500 ease-out"
+          className="md:hidden text-2xl z-100 transition-transform duration-500 ease-out"
         >
           <span
             className={
@@ -92,17 +88,21 @@ const Menu = () => {
           </span>
         </button>
       </div>
-      {/* Menu Tabs Content */}
+      {/* Menu Tabs Content - FIX APPLIED HERE */}
       <div
-        className={`fixed top-0 bottom-0 left-0 w-64 bg-gray-500 z-40 shadow-xl p-6 transition-transform duration-300 transform ${
+        className={`fixed top-0 bottom-0 left-0 w-68 bg-slate-900 z-40 shadow-xl  transition-transform duration-500 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:hidden`}
       >
-        <div className="flex flex-col space-y-4 pt-16 ">
-          {/* pt-16 to make space for the fixed header content */}
+        {/* Items */}
+        <div className="grid space-y-4">
+          <h1 className="text-center text-white text-2xl font-bold mt-4">
+            Car <span className="text-amber-400">Rental</span>
+          </h1>
           <NavLink to="/" onClick={toggleMenu} className={mobileLinkClasses}>
             Home
           </NavLink>
+          <hr className="text-amber-400" />
           <NavLink
             to="/cars"
             onClick={toggleMenu}
@@ -110,6 +110,7 @@ const Menu = () => {
           >
             Cars
           </NavLink>
+          <hr className="text-amber-400" />
           <NavLink
             to="/booking"
             onClick={toggleMenu}
@@ -117,6 +118,7 @@ const Menu = () => {
           >
             Booking
           </NavLink>
+          <hr className="text-amber-400" />
           <NavLink
             to="/Contact"
             onClick={toggleMenu}
@@ -124,6 +126,7 @@ const Menu = () => {
           >
             Contact
           </NavLink>
+          <hr className="text-amber-400" />
           <NavLink
             to="/about"
             onClick={toggleMenu}
@@ -131,6 +134,7 @@ const Menu = () => {
           >
             About US
           </NavLink>
+          <hr className="text-amber-400" />
           <button
             type="button"
             className="login mx-6 font-bold text-xl p-2 rounded-xl bg-amber-600 text-white mt-4"
@@ -140,9 +144,9 @@ const Menu = () => {
           </button>
         </div>
       </div>
-      {/*  Close menu when clicking the overlay */}
+      {/* Close menu when clicking the overlay */}
       {isOpen && (
-        <div className="fixed  inset-0  md:hidden" onClick={toggleMenu} />
+        <div className="fixed inset-0 md:hidden" onClick={toggleMenu} />
       )}
     </nav>
   );

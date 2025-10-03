@@ -9,9 +9,10 @@ const Choose = () => {
       <h1 className="text-2xl font-bold underline">
         Why Choose <span className="text-red-500">Us?</span>
       </h1>
-      <div className="md:flex gap-x-3">
+      <div className="md:flex justify-center items-center gap-x-3">
+        {/* Card one */}
         <div className="grid justify-center text-center">
-          <div class="flex flex-col items-center  mt-4 p-7 w-[480px] text-black rounded-2xl shadow-black shadow-2xl bg-gradient-to-r from-orange-700 to-orange-400">
+          <div class="flex flex-col items-center  mt-4 p-7  text-black rounded-2xl shadow-black shadow-2xl bg-gradient-to-r from-orange-700 to-orange-400">
             <FaCar size={48} className="m-5" />
             <h1 class="mt-2 font-bold text-xl ">Wide Selection of Vehicles</h1>
             <span class=" text-sm mt-1">
@@ -21,8 +22,9 @@ const Choose = () => {
             </span>
           </div>
         </div>
+        {/* Card two  */}
         <div className="grid justify-center text-center">
-          <div class="flex flex-col items-center mt-4 p-7 w-[480px] text-black rounded-2xl shadow-black shadow-2xl bg-gradient-to-r from-orange-700 to-orange-400">
+          <div class="flex flex-col items-center mt-4 p-7 text-black rounded-2xl shadow-black shadow-2xl bg-gradient-to-r from-orange-700 to-orange-400">
             <GiReceiveMoney size={48} className="m-5" />
             <h1 class="mt-2 font-bold text-xl ">Affordable Rates </h1>
             <span class=" text-sm mt-1">
@@ -31,8 +33,9 @@ const Choose = () => {
             </span>
           </div>
         </div>
+        {/* Card three */}
         <div className="grid justify-center text-center">
-          <div class="flex flex-col items-center mt-4 p-7 w-[480px] text-black rounded-2xl shadow-black shadow-2xl bg-gradient-to-r from-orange-700 to-orange-400">
+          <div class="flex flex-col items-center mt-4 p-7  text-black rounded-2xl shadow-black shadow-2xl bg-gradient-to-r from-orange-700 to-orange-400">
             <RiCustomerService2Fill size={48} className="m-5" />
             <h1 class="mt-2 font-bold text-xl ">Excellent Customer Service</h1>
             <span class=" text-sm mt-1">

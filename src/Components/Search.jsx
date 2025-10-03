@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <div class="hidden  md:flex items-end space-x-4 p-4 py-5 rounded-xl bg-black/50">
       <div class="flex flex-col items-center">
-        <h1 class="font-semibold mb-2">Location</h1>
+        <h1 class="font-semibold mb-2 text-white">Location</h1>
 
         <select
           class="

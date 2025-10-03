@@ -2,14 +2,14 @@ import React from "react";
 
 const Search_2 = () => {
   return (
-    <div class="grid justify-center items-center md:hidden ml-7 mt-3 w-90  py-7 rounded-xl bg-black/50">
+    <div className="grid md:hidden justify-center items-center mx-14 mt-3 bg-gray-500 p-6 rounded-2xl ">
       <div class="flex flex-col items-center">
-        <h1 class="font-semibold mb-2">Location</h1>
+        <h1 class="font-semibold mb-2 text-white">Location</h1>
 
         <select
           class="
         bg-white text-gray-800 
-        py-2 pl-2 w-full
+        py-2 pl-2  w-63
         border border-transparent rounded-lg 
         shadow-md focus:outline-none 
         appearance-none hover:cursor-pointer
@@ -30,13 +30,13 @@ const Search_2 = () => {
       </div>
 
       <div class="flex flex-col items-center">
-        <h1 class="font-semibold mb-2">Date</h1>
+        <h1 class="font-semibold mb-2 text-white">Date</h1>
 
         <input
           type="date"
           class="
           bg-white text-gray-800 
-          py-2 px-2 w-72 hover:cursor-pointer
+          py-2 px-2 w-63 hover:cursor-pointer
           border border-transparent rounded-lg 
           shadow-md focus:outline-none
         "

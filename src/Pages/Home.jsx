@@ -9,17 +9,21 @@ import Search_2 from "../Components/Search_2";
 
 const Home = () => {
   return (
-    <div className="p-4 pl-8 pr-8">
-      <div className="p-2 pl-7 pr-7 bg-white rounded-2xl">
+    <div className="p-2 pt-5">
+      <div className="p-2 px-4 bg-white rounded-2xl">
         {/* Imported Component */}
         <SlideShow>
           {/* Collected the prop here as child */}
+
+          {/* ui implemented from components */}
           <Search />
         </SlideShow>
       </div>
 
+      {/* Dynamically added another search option */}
       <Search_2 />
 
+      {/* Book now butons added */}
       <div className="flex justify-center mt-16">
         <button
           type="submit"
@@ -32,6 +36,7 @@ const Home = () => {
         </button>
       </div>
 
+      {/* ui implemented from components */}
       <HomeCars />
       <Choose />
       <HomeFooter />

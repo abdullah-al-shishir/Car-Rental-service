@@ -25,7 +25,6 @@ const SlideShow = ({ children, interval = 3000 }) => {
 
   const bg_style = {
     backgroundImage: images[index],
-    height: "100vh",
     width: "100%",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -35,7 +34,11 @@ const SlideShow = ({ children, interval = 3000 }) => {
   return (
     <div
       style={bg_style}
-      class="rounded-2xl flex justify-center items-center text-white"
+      class="rounded-2xl flex justify-center items-center text-white 
+            h-[33vh] 
+            md:h-[60vh] 
+            lg:h-[75vh] 
+            xl:h-screen"
     >
       {/* Passing Search component as prop */}
       {children}
