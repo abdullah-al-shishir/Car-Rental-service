@@ -57,7 +57,7 @@ const Footer = () => {
       </div>
       <div className="text-center mt-3">
         <span className="text-white ">
-          All rights are reserved by @car Renters.com
+          All rights are reserved by @ car.rentels.com
         </span>
       </div>
     </div>
