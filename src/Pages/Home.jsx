@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa6";
-import SlideShow from "../Components/SlideShow";
-import Search from "../Components/Search";
-import HomeCars from "../Components/HomeCars";
-import Choose from "../Components/Choose";
-import HomeFooter from "../Components/HomeFooter";
-import Search_2 from "../Components/Search_2";
+import SlideShow from "../Components/Home/SlideShow";
+import HomeCars from "../Components/Home/HomeCars";
+import Choose from "../Components/Home/Choose";
+import HomeFooter from "../Components/Home/HomeFooter";
+import Search_2 from "../Components/Home/Search_2";
+import Search from "../Components/Home/Search";
 
 const Home = () => {
   return (

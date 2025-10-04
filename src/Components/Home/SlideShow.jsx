@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Search from "./Search";
 
 const images = [
   "url(/assets/car1.jpg)",
