@@ -3,6 +3,7 @@ import Top from "../Components/About_us/Top";
 import History from "../Components/About_us/History";
 import Members from "../Components/About_us/Members";
 import Fleet from "../Components/About_us/Fleet";
+import Values from "../Components/About_us/Values";
 
 const About_Us = () => {
   return (
@@ -11,6 +12,7 @@ const About_Us = () => {
       <History />
       <Members />
       <Fleet />
+      <Values />
     </div>
   );
 };

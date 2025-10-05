@@ -9,7 +9,7 @@ const Members = () => {
       </h1>
       {/* Members list */}
       <div className="bg-fuchsia-100 rounded-2xl py-3  ">
-        <div className="md:flex justify-between mx-10">
+        <div className="md:flex justify-between mx-3">
           <div className="grid justify-center items-center py-5 bg-white mx-26 md:mx-0 rounded-2xl my-3 md:my-5 md:px-7 md:py-10">
             <img
               src="/assets/Members/member-1.jpg"
