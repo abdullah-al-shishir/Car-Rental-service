@@ -4,6 +4,7 @@ import History from "../Components/About_us/History";
 import Members from "../Components/About_us/Members";
 import Fleet from "../Components/About_us/Fleet";
 import Values from "../Components/About_us/Values";
+import Options from "../Components/Contact/Options";
 
 const About_Us = () => {
   return (
@@ -13,8 +14,11 @@ const About_Us = () => {
       <Members />
       <Fleet />
       <Values />
+      <h1 className="text-center text-xl font-bold underline mt-10 my-3">
+        Contact <span className="text-red-500">Us?</span>
+      </h1>
+      <Options backgroundColor="transparent" />
     </div>
   );
 };
-
 export default About_Us;

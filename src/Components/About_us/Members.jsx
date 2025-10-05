@@ -4,7 +4,7 @@ const Members = () => {
   return (
     <div className="mt-5 mx-3">
       {/* Team Members */}
-      <h1 className="text-center text-xl font-bold underline mb-3">
+      <h1 className="text-center text-xl font-bold underline mb-6">
         Our <span className="text-red-500">Team</span>
       </h1>
       {/* Members list */}
