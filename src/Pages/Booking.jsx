@@ -21,7 +21,7 @@ const Booking = () => {
             <label htmlFor="password">Password</label>
             <input type="password" className={input_style} />
           </div>
-          <span className="text-red-600 text-sm block text-right mt-2">
+          <span className="text-red-600 text-sm block text-right mt-2 hover:cursor-pointer hover:underline">
             Forgot Password?
           </span>
           {/* Log in button */}

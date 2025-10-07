@@ -64,12 +64,18 @@ const Menu = () => {
       {/* Login Button & Mobile Menu Button Wrapper */}
       <div className="flex items-center mr-3">
         <div className="hidden md:block">
-          <button
+          <NavLink
+            to="/booking"
+            className="login font-bold text-xl p-1.5 pl-4 pr-4 rounded-xl bg-amber-600"
+          >
+            Login
+          </NavLink>
+          {/* <button
             type="submit"
             className="login font-bold text-xl p-1.5 pl-4 pr-4 rounded-xl bg-amber-600"
           >
             Login
-          </button>
+          </button> */}
         </div>
         {/* Handling Menu Button */}
         <button
@@ -135,13 +141,20 @@ const Menu = () => {
             About US
           </NavLink>
           <hr className="text-amber-400" />
-          <button
+          {/* <button
             type="button"
             className="login mx-6 font-bold text-xl p-2 rounded-xl bg-amber-600 text-white mt-4"
             onClick={toggleMenu}
           >
             Login
-          </button>
+          </button> */}
+          <NavLink
+            to="/booking"
+            className="login text-center mx-6 font-bold text-xl p-2 rounded-xl bg-amber-600 text-white mt-4"
+            onClick={toggleMenu}
+          >
+            Login
+          </NavLink>
         </div>
       </div>
       {/* Close menu when clicking the overlay */}
