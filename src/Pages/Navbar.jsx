@@ -17,6 +17,10 @@ const Menu = () => {
     `font-semibold text-xl hover:text-amber-600 ${
       isActive ? "underline font-bold text-amber-600" : ""
     }`;
+  const desktopLogoClasses = ({ isActive }) =>
+    `font-semibold text-xl hover:text-amber-600 ${
+      isActive ? " font-bold text-amber-600" : ""
+    }`;
 
   // FIX: mobileLinkClasses uses a function with isActive for styling
   const mobileLinkClasses = ({ isActive }) =>
@@ -28,16 +32,16 @@ const Menu = () => {
     <nav className="flex justify-between items-center bg-gray-50">
       {/* Logo and Branding Section */}
       <div className="flex items-center">
-        <a href="http://localhost:5173/">
+        <NavLink to="/" className={desktopLinkClasses}>
           <img
             src="./assets/logo.jpg"
             className="m-4 h-16 border-2 border-amber-600 rounded-[50%]"
           />
-        </a>
-        <a href="http://localhost:5173/">
-          <span className="font-bold text-2xl"> Car</span>
+        </NavLink>
+        <NavLink to="/" className={desktopLogoClasses}>
+          <span className="font-bold text-2xl text-black"> Car</span>
           <span className="font-bold text-2xl text-amber-500">Rental</span>
-        </a>
+        </NavLink>
         <button type="submit">
           <ImBrightnessContrast className="icon font-bold bg-white ml-3 p-2 text-4xl border-1 border-gray-200 rounded-lg" />
         </button>
