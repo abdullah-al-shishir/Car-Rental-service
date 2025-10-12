@@ -5,8 +5,8 @@ const Booking = () => {
     " w-full py-2 pl-1.5 rounded-xl border-1 border-gray-300 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none";
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-white py-16 px-8 rounded-xl w-full max-w-sm sm:max-w-[450px] shadow-xl">
+    <div className="flex flex-col justify-center items-center bg-gray-100">
+      <div className="my-24 bg-white py-16 px-8 rounded-xl w-full max-w-sm sm:max-w-[450px] shadow-xl">
         <h1 className="text-center font-bold text-xl">Welcome</h1>
         <h1 className="text-center text-amber-500">Please Sign in</h1>
         {/* Name and Password fill */}
